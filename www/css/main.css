@@ -1,0 +1,182 @@
+body {
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.header {
+	padding: 10px;
+	background-color: white;
+	height: 45px;
+	font-family: 'Coustard', serif;
+}
+.header h1 {
+	font-size: 26px;
+	text-transform: uppercase;
+}
+.header p {
+	font-size: 20px;
+	font-style: italic;
+}
+@media (max-width:2000px){
+.header h1 {
+	display: inline;
+}
+.header p {
+	float: right;
+	display: inline;
+}
+}
+@media (max-width:800px){
+.header {
+	text-align: center;
+	height: 70px;
+	padding: 5px;
+}
+.header h1 {
+	display: block;
+	font-size: 22px;
+	line-height: 1px;
+}
+.header p {
+	float: none;
+	display: block;
+	font-size: 16px;
+	line-height: 1px;
+}
+}
+@media (max-width:450px){
+.header {
+	height: 0px
+}
+.header p {
+	float: none;
+	text-align: center;
+}
+}
+.row {
+	margin-left: auto;
+	margin-right: auto;
+}
+.jumbotron {
+	background-color: rgba(0,0,0, 0.78);
+	margin-top: 20px;
+}
+.jumbotron p {
+	color: white;
+	padding-left: 5px;
+}
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {/* Margin bottom by footer height */
+  margin-bottom: 150px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;/* Set the fixed height of the footer here */
+  height: auto;
+  background-color: #f5f5f5;
+  padding: 25px 0;
+  text-align: center;
+  background-color: #222;
+  color: white;
+}
+body > .container {
+  padding: 60px 15px 0;
+}
+footer span.copyright {
+    text-transform: uppercase;
+    text-transform: none;
+    font-family: 'Halant', serif;
+    line-height: 40px;
+}
+
+footer ul.quicklinks {
+    margin-bottom: 0;
+    text-transform: uppercase;
+    text-transform: none;
+    font-family: 'Halant', serif;
+    line-height: 40px;
+}
+
+ul.social-buttons {
+    margin-bottom: 0;
+}
+
+ul.social-buttons li a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    font-size: 20px;
+    line-height: 40px;
+    outline: 0;
+    color: #fff;
+    background-color: #222;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
+}
+
+/*ul.social-buttons li a:hover,
+ul.social-buttons li a:focus,
+ul.social-buttons li a:active {
+    background-color: #0000FF;
+}*/
+ .affix {
+      top:0;
+      width: 100%;
+      z-index: 9999 !important;
+  }
+  .navbar {
+      margin-bottom: 0px;
+  }
+
+  .affix ~ .container-fluid {
+     position: relative;
+     top: 50px;
+  } 
+.carousel-inner img {
+	margin: auto;
+}
+.table, td, th {
+	color: white;
+	font-family: 'Halant', serif;
+}
+html.businesses .pagetitle {
+	text-transform: none;
+}
+
+footer, .jumbotron p {
+	font-family: 'Halant', serif;
+	font-size: 17px;
+	line-height: 23px;
+}
+nav {
+	font-family: 'Fjalla One', sans-serif;
+}
+
+}*/
+/* tab color */
+/*.nav-tabs>li>a {
+  background-color: #333333; 
+  border-color: #777777;
+  color:#fff;
+}*/
+
+/* active tab color */
+/*.nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus {
+  color: #fff;
+  background-color: #666;
+  border: 1px solid #888888;
+}*/
+
+/* hover tab color */
+/*.nav-tabs>li>a:hover {
+  border-color: #000000;
+  background-color: #111111;
+}*/

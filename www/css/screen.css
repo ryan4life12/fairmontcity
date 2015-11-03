@@ -1,0 +1,449 @@
+h4 {
+  font-family: "Halant", serif;
+  color: white;
+}
+
+img {
+  border-radius: 10px;
+}
+
+#content a:link, .footer a:link {
+  font-size: 1.2em;
+  color: #008cdd;
+}
+
+#content a:hover, .footer a:hover {
+  text-decoration: underline;
+  color: red;
+  font-weight: bold;
+}
+
+#content a:visited, .footer a:visited {
+  color: #609;
+}
+
+a:active {
+  padding-top: 2px;
+}
+
+#aboutus .pagetitle {
+  font-size: 40px;
+  font-family: "Fjalla One", sans-serif;
+  text-transform: uppercase;
+  color: purple;
+  border: 3px solid purple;
+  background-color: white;
+  text-align: center;
+}
+
+#aboutus .nav-tabs {
+  font-family: "Halant", serif;
+  border-bottom: 2px solid purple;
+  text-decoration: none;
+}
+#aboutus .nav-tabs li.active > a, #aboutus .nav-tabs > li.active > a:hover, #aboutus .nav-tabs > li.active > a:focus {
+  border: 2px solid purple;
+  color: white;
+  background-color: black;
+}
+#aboutus .nav-tabs > li > a {
+  text-align: center;
+  color: black;
+  background-color: white;
+  text-decoration: none;
+}
+#aboutus .nav-tabs > li > a:hover {
+  border: 2px solid purple;
+  background-color: white;
+  color: purple;
+  text-decoration: none;
+}
+
+#aboutussoclinks a:link {
+  color: white;
+}
+#aboutussoclinks li a:hover,
+#aboutussoclinks li a:focus,
+#aboutussoclinks li a:active {
+  background-color: purple;
+}
+#aboutussoclinks li a:visited {
+  color: white;
+}
+
+#admin .pagetitle {
+  font-size: 40px;
+  font-family: "Fjalla One", sans-serif;
+  text-transform: uppercase;
+  color: red;
+  border: 3px solid red;
+  background-color: white;
+  text-align: center;
+}
+
+#admin .nav-tabs {
+  font-family: "Halant", serif;
+  border-bottom: 2px solid red;
+  text-decoration: none;
+}
+#admin .nav-tabs li.active > a, #admin .nav-tabs > li.active > a:hover, #admin .nav-tabs > li.active > a:focus {
+  border: 2px solid red;
+  color: white;
+  background-color: black;
+}
+#admin .nav-tabs > li > a {
+  text-align: center;
+  color: black;
+  background-color: white;
+  text-decoration: none;
+}
+#admin .nav-tabs > li > a:hover {
+  border: 2px solid red;
+  background-color: white;
+  color: red;
+  text-decoration: none;
+}
+
+#minutesform label {
+  color: red;
+  font-family: main1;
+}
+
+#adminsoclinks .social-buttons a:link {
+  color: white;
+}
+#adminsoclinks .social-buttons li a:hover,
+#adminsoclinks .social-buttons li a:focus,
+#adminsoclinks .social-buttons li a:active {
+  background-color: red;
+}
+#adminsoclinks .social-buttons li a:visited {
+  color: white;
+}
+
+#businesses .pagetitle {
+  font-size: 40px;
+  font-family: "Fjalla One", sans-serif;
+  text-transform: uppercase;
+  color: #0000DD;
+  border: 3px solid #0000DD;
+  background-color: white;
+  text-align: center;
+}
+
+#businesses .nav-tabs {
+  font-family: "Halant", serif;
+  border-bottom: 2px solid #0000DD;
+  text-decoration: none;
+}
+#businesses .nav-tabs li.active > a, #businesses .nav-tabs > li.active > a:hover, #businesses .nav-tabs > li.active > a:focus {
+  border: 2px solid #0000DD;
+  color: white;
+  background-color: black;
+}
+#businesses .nav-tabs > li > a {
+  text-align: center;
+  color: black;
+  background-color: white;
+  text-decoration: none;
+}
+#businesses .nav-tabs > li > a:hover {
+  border: 2px solid #0000DD;
+  background-color: white;
+  color: #0000DD;
+  text-decoration: none;
+}
+
+#businessessoclinks a:link {
+  color: white;
+}
+#businessessoclinks li a:hover,
+#businessessoclinks li a:focus,
+#businessessoclinks li a:active {
+  background-color: #0000DD;
+}
+#businessessoclinks li a:visited {
+  color: white;
+}
+
+#contactus .pagetitle {
+  font-size: 40px;
+  font-family: "Fjalla One", sans-serif;
+  text-transform: uppercase;
+  color: #3385FF;
+  border: 3px solid #3385FF;
+  background-color: white;
+  text-align: center;
+}
+
+#contactus h4 {
+  color: #3385FF;
+}
+
+#contactus .nav-tabs {
+  font-family: "Halant", serif;
+  border-bottom: 2px solid #3385FF;
+  text-decoration: none;
+}
+#contactus .nav-tabs li.active > a, #contactus .nav-tabs > li.active > a:hover, #contactus .nav-tabs > li.active > a:focus {
+  border: 2px solid #3385FF;
+  color: white;
+  background-color: black;
+}
+#contactus .nav-tabs > li > a {
+  text-align: center;
+  color: black;
+  background-color: white;
+  text-decoration: none;
+}
+#contactus .nav-tabs > li > a:hover {
+  border: 2px solid #3385FF;
+  background-color: white;
+  color: #3385FF;
+  text-decoration: none;
+}
+
+#contactusform1 .form-group label {
+  color: #3385FF;
+  font-family: main1;
+}
+
+#contactussoclinks .social-buttons a:link {
+  color: white;
+}
+#contactussoclinks .social-buttons li a:hover,
+#contactussoclinks .social-buttons li a:focus,
+#contactussoclinks .social-buttons li a:active {
+  background-color: #3385FF;
+}
+#contactussoclinks .social-buttons li a:visited {
+  color: white;
+}
+
+#fire .pagetitle {
+  font-size: 40px;
+  font-family: "Fjalla One", sans-serif;
+  text-transform: uppercase;
+  color: red;
+  border: 3px solid red;
+  background-color: white;
+  text-align: center;
+}
+
+#fire .nav-tabs {
+  font-family: "Halant", serif;
+  border-bottom: 2px solid red;
+  text-decoration: none;
+}
+#fire .nav-tabs li.active > a, #fire .nav-tabs > li.active > a:hover, #fire .nav-tabs > li.active > a:focus {
+  border: 2px solid red;
+  color: white;
+  background-color: black;
+}
+#fire .nav-tabs > li > a {
+  text-align: center;
+  color: black;
+  background-color: white;
+  text-decoration: none;
+}
+#fire .nav-tabs > li > a:hover {
+  border: 2px solid red;
+  background-color: white;
+  color: red;
+  text-decoration: none;
+}
+
+#firesoclinks a:link {
+  color: white;
+}
+#firesoclinks li a:hover,
+#firesoclinks li a:focus,
+#firesoclinks li a:active {
+  background-color: red;
+}
+#firesoclinks li a:visited {
+  color: white;
+}
+
+#index .pagetitle {
+  font-size: 40px;
+  font-family: "Fjalla One", sans-serif;
+  text-transform: uppercase;
+  color: white;
+  border: 3px solid white;
+  background-color: black;
+  text-align: center;
+}
+
+#index .nav-tabs {
+  font-family: "Halant", serif;
+  border-bottom: 2px solid white;
+  text-decoration: none;
+}
+#index .nav-tabs li.active > a, #index .nav-tabs > li.active > a:hover, #index .nav-tabs > li.active > a:focus {
+  border: 2px solid white;
+  color: white;
+  background-color: black;
+}
+#index .nav-tabs > li > a {
+  text-align: center;
+  color: black;
+  background-color: white;
+  text-decoration: none;
+}
+#index .nav-tabs > li > a:hover {
+  border: 2px solid white;
+  background-color: white;
+  color: white;
+  text-decoration: none;
+}
+
+#indexsoclinks a:link {
+  color: white;
+}
+#indexsoclinks li a:hover,
+#indexsoclinks li a:focus,
+#indexsoclinks li a:active {
+  background-color: white;
+  color: black;
+}
+#indexsoclinks li a:visited {
+  color: white;
+}
+
+#police .pagetitle {
+  font-size: 40px;
+  font-family: "Fjalla One", sans-serif;
+  text-transform: uppercase;
+  color: navy;
+  border: 3px solid navy;
+  background-color: white;
+  text-align: center;
+}
+
+#police .nav-tabs {
+  font-family: "Halant", serif;
+  border-bottom: 2px solid navy;
+  text-decoration: none;
+}
+#police .nav-tabs li.active > a, #police .nav-tabs > li.active > a:hover, #police .nav-tabs > li.active > a:focus {
+  border: 2px solid navy;
+  color: white;
+  background-color: black;
+}
+#police .nav-tabs > li > a {
+  text-align: center;
+  color: black;
+  background-color: white;
+  text-decoration: none;
+}
+#police .nav-tabs > li > a:hover {
+  border: 2px solid navy;
+  background-color: white;
+  color: navy;
+  text-decoration: none;
+}
+
+#policesoclinks a:link {
+  color: white;
+}
+#policesoclinks li a:hover,
+#policesoclinks li a:focus,
+#policesoclinks li a:active {
+  background-color: navy;
+}
+#policesoclinks li a:visited {
+  color: white;
+}
+
+#publicworks .pagetitle {
+  font-size: 40px;
+  font-family: "Fjalla One", sans-serif;
+  text-transform: uppercase;
+  color: #FF7519;
+  border: 3px solid #FF7519;
+  background-color: white;
+  text-align: center;
+}
+
+#publicworks .nav-tabs {
+  font-family: "Halant", serif;
+  border-bottom: 2px solid #FF7519;
+  text-decoration: none;
+}
+#publicworks .nav-tabs li.active > a, #publicworks .nav-tabs > li.active > a:hover, #publicworks .nav-tabs > li.active > a:focus {
+  border: 2px solid #FF7519;
+  color: white;
+  background-color: black;
+}
+#publicworks .nav-tabs > li > a {
+  text-align: center;
+  color: black;
+  background-color: white;
+  text-decoration: none;
+}
+#publicworks .nav-tabs > li > a:hover {
+  border: 2px solid #FF7519;
+  background-color: white;
+  color: #FF7519;
+  text-decoration: none;
+}
+
+#publicworkssoclinks a:link {
+  color: white;
+}
+#publicworkssoclinks li a:hover,
+#publicworkssoclinks li a:focus,
+#publicworkssoclinks li a:active {
+  background-color: #FF7519;
+}
+#publicworkssoclinks li a:visited {
+  color: white;
+}
+
+#zoning .pagetitle {
+  font-size: 40px;
+  font-family: "Fjalla One", sans-serif;
+  text-transform: uppercase;
+  color: green;
+  border: 3px solid green;
+  background-color: white;
+  text-align: center;
+}
+
+#zoning .nav-tabs {
+  font-family: "Halant", serif;
+  border-bottom: 2px solid green;
+  text-decoration: none;
+}
+#zoning .nav-tabs li.active > a, #zoning .nav-tabs > li.active > a:hover, #zoning .nav-tabs > li.active > a:focus {
+  border: 2px solid green;
+  color: white;
+  background-color: black;
+}
+#zoning .nav-tabs > li > a {
+  text-align: center;
+  color: black;
+  background-color: white;
+  text-decoration: none;
+}
+#zoning .nav-tabs > li > a:hover {
+  border: 2px solid green;
+  background-color: white;
+  color: green;
+  text-decoration: none;
+}
+
+#zoningsoclinks a:link {
+  color: white;
+}
+#zoningsoclinks li a:hover,
+#zoningsoclinks li a:focus,
+#zoningsoclinks li a:active {
+  background-color: green;
+}
+#zoningsoclinks li a:visited {
+  color: white;
+}
+
+/*# sourceMappingURL=screen.css.map */

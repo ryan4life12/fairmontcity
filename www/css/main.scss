@@ -1,0 +1,213 @@
+//colors
+$aboutuscolor: purple;
+$admincolor: red;
+$businessescolor: #0000DD;
+$contactuscolor: #3385FF;
+$firecolor: red;
+$indexcolor: white;
+$policecolor: navy;
+$publicworkscolor: #FF7519;
+$zoningcolor: green;
+
+//fonts
+$main1: 'Fjalla One', sans-serif;
+$main2: 'Halant', serif;
+
+h4 {
+  font-family: $main2;
+  color: white;
+}
+//images
+img {
+  border-radius: 10px;
+}
+//links
+#content a:link ,.footer a:link {
+  font-size: 1.2em;
+  color: #008cdd;
+}
+#content a:hover, .footer a:hover {
+  text-decoration: underline;
+  color: red; 
+  font-weight: bold;
+}
+#content a:visited, .footer a:visited {
+  color: #609;
+}
+a:active { padding-top: 2px; }
+//mixins
+@mixin pagetitle ($color){
+  font-size: 40px;
+  font-family: $main1;
+  text-transform: uppercase;
+  color: $color;
+  border: 3px solid $color;
+  background-color: white;
+  text-align: center;
+}
+@mixin pagetitleinverse ($color){
+  font-size: 40px;
+  font-family: $main1;
+  text-transform: uppercase;
+  color: $color;
+  border: 3px solid $color;
+  background-color: black;
+  text-align: center;
+}
+
+@mixin tabs ($color) { 
+  font-family: $main2;
+  border-bottom: 2px solid $color;
+  text-decoration: none;
+  li.active>a, >li.active>a:hover, >li.active>a:focus {
+    border: 2px solid $color;
+    color: white;
+    background-color: black;
+  }
+  > li > a
+  {
+    text-align: center;
+    color: black;
+    background-color: white;
+    text-decoration: none;
+  
+  &:hover
+  {
+    border: 2px solid $color;
+    background-color: white;
+    color: $color;
+    text-decoration: none;
+  }
+  }
+}
+@mixin sociallinks ($color) {
+a:link {
+color: white;
+}
+li a:hover,
+li a:focus,
+li a:active {
+background-color: $color;
+}
+li a:visited {
+  color: white;
+}
+}
+@mixin sociallinksinversehover ($color) {
+a:link {
+color: white;
+}
+li a:hover,
+li a:focus,
+li a:active {
+background-color: $color;
+color: black;
+}
+li a:visited {
+  color: white;
+}
+}
+@mixin labelstyle ($color) {
+  color: $color;
+  font-family: main1;
+}
+// About Us Page
+#aboutus .pagetitle {
+  @include pagetitle ($aboutuscolor);
+}
+#aboutus .nav-tabs {
+  @include tabs ($aboutuscolor);
+}
+#aboutussoclinks {
+  @include sociallinks ($aboutuscolor);
+}
+// Administration Page
+#admin .pagetitle {
+  @include pagetitle ($admincolor);
+}
+#admin .nav-tabs {
+  @include tabs ($admincolor);
+}
+#minutesform label {
+  @include labelstyle ($admincolor);
+}
+#adminsoclinks .social-buttons {
+  @include sociallinks ($admincolor);
+}
+// Businesses Page
+#businesses .pagetitle {
+  @include pagetitle ($businessescolor);
+}
+#businesses .nav-tabs {
+  @include tabs ($businessescolor);
+}
+#businessessoclinks  {
+  @include sociallinks ($businessescolor);
+}
+//Contact Us Page
+#contactus .pagetitle {
+  @include pagetitle ($contactuscolor);
+}
+#contactus h4 {
+  color: $contactuscolor;
+}
+#contactus .nav-tabs {
+  @include tabs ($contactuscolor);
+}
+#contactusform1 .form-group label {
+  @include labelstyle ($contactuscolor);
+}
+#contactussoclinks .social-buttons {
+  @include sociallinks ($contactuscolor);
+}
+// Fire Department Page
+#fire .pagetitle {
+  @include pagetitle ($firecolor);
+}
+#fire .nav-tabs {
+  @include tabs ($firecolor);
+}
+#firesoclinks {
+  @include sociallinks ($firecolor);
+}
+// Home Page
+#index .pagetitle {
+  @include pagetitleinverse ($indexcolor);
+}
+#index .nav-tabs {
+  @include tabs ($indexcolor);
+}
+#indexsoclinks {
+  @include sociallinksinversehover ($indexcolor);
+}
+// Police Department Page
+#police .pagetitle {
+  @include pagetitle ($policecolor);
+}
+#police .nav-tabs {
+  @include tabs ($policecolor);
+}
+#policesoclinks {
+  @include sociallinks ($policecolor);
+}
+//Public Works Department Page
+#publicworks .pagetitle {
+  @include pagetitle ($publicworkscolor);
+}
+#publicworks .nav-tabs {
+  @include tabs ($publicworkscolor);
+}
+#publicworkssoclinks {
+  @include sociallinks ($publicworkscolor);
+}
+// Zoning Department Page
+#zoning .pagetitle {
+  @include pagetitle ($zoningcolor);
+}
+#zoning .nav-tabs {
+  @include tabs ($zoningcolor);
+}
+#zoningsoclinks {
+  @include sociallinks ($zoningcolor);
+}
+
