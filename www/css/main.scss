@@ -3,6 +3,7 @@ $aboutuscolor: purple;
 $admincolor: red;
 $businessescolor: #0000DD;
 $contactuscolor: #3385FF;
+$enterprisezoningcolor: #099bc6;
 $firecolor: red;
 $indexcolor: white;
 $policecolor: navy;
@@ -13,10 +14,21 @@ $zoningcolor: green;
 $main1: 'Fjalla One', sans-serif;
 $main2: 'Halant', serif;
 
-h4 {
-  font-family: $main2;
+h1, h2, h3, h4, h5, h6, {
+  font-family: $main1;
   color: white;
 }
+#enterprisezoning h4:hover, #enterprisezoning p:hover, #enterprisezoning nav:hover{
+  cursor: pointer;
+  color: $enterprisezoningcolor;
+}
+#enterprisezoning p, #enterprisezoning p > li {
+  display: none;
+  padding-left: 5px;
+  border: 1px solid $enterprisezoningcolor;
+  color: white;
+}
+
 //images
 img {
   border-radius: 10px;
@@ -160,6 +172,17 @@ li a:visited {
 #contactussoclinks .social-buttons {
   @include sociallinks ($contactuscolor);
 }
+//Enterprise Zoning Page
+#enterprisezoning .pagetitle {
+  @include pagetitle ($enterprisezoningcolor);
+}
+#enterprisezoning .nav-tabs {
+  @include tabs ($enterprisezoningcolor);
+}
+#enterprisezoningsoclinks {
+  @include sociallinks ($enterprisezoningcolor);
+}
+
 // Fire Department Page
 #fire .pagetitle {
   @include pagetitle ($firecolor);

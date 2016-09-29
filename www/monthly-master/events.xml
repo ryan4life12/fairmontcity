@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<monthly>
+
+
+	<event>
+		<id>1</id>
+		<name>Village Board Meeting</name>
+		<startdate>2016-05-18</startdate>
+		<enddate>2016-05-18</enddate>
+		<starttime>7:00</starttime>
+		<endtime>9:00</endtime>
+		<color>#ffb128</color>
+		<url></url>
+	</event>
+
+	<event>
+		<id>2</id>
+		<name>Village Board Meeting</name>
+		<startdate>2016-06-01</startdate>
+		<enddate>2016-06-01</enddate>
+		<starttime>7:00</starttime>
+		<endtime>9:00</endtime>
+		<color>#ffb128</color>
+		<url></url>
+	</event>
+	
+	<event>
+		<id>3</id>
+		<name>Village Board Meeting</name>
+		<startdate>2016-06-15</startdate>
+		<enddate>2016-06-15</enddate>
+		<starttime>7:00</starttime>
+		<endtime>9:00</endtime>
+		<color>#ffb128</color>
+		<url></url>
+	</event>
+
+	<event>
+		<id>4</id>
+		<name>Another Event</name>
+		<startdate>2016-3-2</startdate>
+		<enddate></enddate>
+		<starttime></starttime>
+		<endtime></endtime>
+		<color>#9f4b99</color>
+		<url></url>
+	</event>
+
+
+</monthly>

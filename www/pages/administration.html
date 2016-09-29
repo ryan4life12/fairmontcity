@@ -47,6 +47,7 @@
 						<li class="dropdown">
 							<a class="dropdown-toggle"data-toggle="dropdown" href="#">Departments<span class="caret"> </span></a>
 							<ul class="dropdown-menu">
+								<li><a href="enterprisezoning.html">Fairmont City/ Caseyville/ Brooklyn Enterprise Zoning</a></li>
 								<li><a href="firedepartment.html">Fire Department</a></li>
 								<li><a href="policedepartment.html">Police Department</a></li>
 								<li><a href="publicworks.html">Public Works Department</a></li>
@@ -67,7 +68,7 @@
 				<div class="col-sm-2">
 					<a href="../index.html"><img src="../img/Logos_Backgrounds/fairmontcitylogo.png" class="img-responsive center-block"></a>
 					<div class="fb-page" data-href="https://www.facebook.com/Fairmont-City-Illinois-Police-Department-209697402416510/timeline/" data-width="200" data-height="500" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="true"></div>
-				</div>
+				</div> <!--col-sm-2-->
 				<div class="col-sm-10">
 					<div class="jumbotron">
 						<div class="row">
@@ -99,6 +100,7 @@
 								    <li data-target="#carousel-example-generic" data-slide-to="4"></li>
 								    <li data-target="#carousel-example-generic" data-slide-to="5"></li>
 								    <li data-target="#carousel-example-generic" data-slide-to="6"></li>
+								    <li data-target="#carousel-example-generic" data-slide-to="7"></li>
 							  	</ol>
 		 
 		  						<!-- Wrapper for slides -->
@@ -117,6 +119,14 @@
 		      								<div class="carousel-caption">
 		          								<h3 align="center">Village Clerk Richard Ramirez<br />
       											<a href="mailto:rramirez@fairmontcityil.com">rramirez@fairmontcityil.com</a></h3>
+		      								</div>
+		    						</div>
+		    						
+		    						<div class="item">
+		      							<img src="../img/Village Officials/trustee_cja.jpg" alt="...">
+		      								<div class="carousel-caption">
+		          								<h3 align="center" style="color: black" style="background-color: white">Charles J. Arriola<br />
+      											<a style="color: black" style="background-color: white" href="mailto:cjarriola@fairmontcityil.com"> cjarriola@fairmontcityil.com</a></h3>
 		      								</div>
 		    						</div>
 		    
@@ -227,11 +237,38 @@
 		
 		<div id="bm" class="tab-pane">
 			<div class="container">
-				<div class="row">
-					<div class="col-sm-3 text-center">
-						<form id="minutesform">
-							<label for="minutes1"><h4 class="blue">2015</h4></label>
-			      			<select class="form-control" onchange="minutes1()" id="minutes1">
+				<div class="form-group">
+					<label for="2016minutes"><h4 class="blue">2016</h4></label>
+			      			<select class="form-control" onchange="minutes(this.id)" id="2016minutes">
+						        <option value="">Please Select</option>
+						        <option value="../docs/minutes/2016/01_06_2016.pdf">January 6</option>
+						        <option value="../docs/minutes/2016/01_20_2016.pdf">January 20</option>
+						        <option value="../docs/minutes/2016/02_03_2016.pdf">February 3</option>
+						        <option value="../docs/minutes/2016/02_17_2016.pdf">February 17</option>
+						        <option value="../docs/minutes/2016/03_02_2016.pdf">March 2</option>
+						        <option value="../docs/minutes/2016/03_16_2016.pdf">March 16</option>
+						        <option value="../docs/minutes/2016/04_06_2016.pdf">April 6</option>
+						        <option value="../docs/minutes/2016/04_20_2016.pdf">April 20</option>
+						        <option value="../docs/minutes/2016/05_04_2016.pdf">May 4</option>
+						        <option value="../docs/minutes/2016/05_18_2016.pdf">May 18</option>
+						        <option value="../docs/minutes/2016/06_01_2016.pdf">June 1</option>
+						        <option value="../docs/minutes/2016/06_15_2016.pdf">June 15</option>
+						        <option value="../docs/minutes/2016/07_06_2016.pdf">July 6</option>
+						        <option value="../docs/minutes/2016/07_20_2016.pdf">July 20</option>
+						        <option value="../docs/minutes/2016/PH_07_20_2016.pdf">July 20 Public Hearing</option>
+						        <option value="../docs/minutes/2016/08_03_2016.pdf">August 3</option>
+						        <option value="../docs/minutes/2016/08_17_2016.pdf">August 17</option>
+						        <option value="../docs/minutes/2016/09_07_2016.pdf">September 7</option>
+						        <!-- <option value="../docs/minutes/2016/09_21_2016.pdf">September 21</option> -->
+						        <!-- <option value="../docs/minutes/2015/10_07_2015.pdf">October 7</option> -->
+						        <!-- <option value="../docs/minutes/2015/10_21_2015.pdf">October 21</option> -->
+						        <!-- <option value="../docs/minutes/2015/11_04_2015.pdf">November 4</option> -->
+						        <!-- <option value="../docs/minutes/2015/11_20_2015.pdf">November 20</option> -->
+						        <!-- <option value="../docs/minutes/2015/12_04_2015.pdf">December 4</option> -->
+						        <!-- <option value="../docs/minutes/2015/12_16_2015.pdf">December 16</option>   -->
+			      			</select>
+							<label for="2015minutes"><h4 class="blue">2015</h4></label>
+			      			<select class="form-control" onchange="minutes(this.id)" id="2015minutes">
 						        <option value="">Please Select</option>
 						        <option value="../docs/minutes/2015/01_07_2015.pdf">January 7</option>
 						        <option value="../docs/minutes/2015/01_21_2015.pdf">January 21</option>
@@ -254,18 +291,15 @@
 						        <option value="../docs/minutes/2015/09_02_2015.pdf">September 2</option>
 						        <option value="../docs/minutes/2015/09_16_2015.pdf">September 16</option>
 						        <option value="../docs/minutes/2015/10_07_2015.pdf">October 7</option>
-						        <!-- <option value="../docs/minutes/2015/10_21_2015.pdf">October 21</option> -->
-						        <!-- <option value="../docs/minutes/2015/11_06_2015.pdf">November 6</option> -->
+						        <option value="../docs/minutes/2015/10_21_2015.pdf">October 21</option>
+						        <option value="../docs/minutes/2015/11_04_2015.pdf">November 4</option>
 						        <!-- <option value="../docs/minutes/2015/11_20_2015.pdf">November 20</option> -->
 						        <!-- <option value="../docs/minutes/2015/12_04_2015.pdf">December 4</option> -->
-						        <!-- <option value="../docs/minutes/2015/12_20_2015.pdf">December 20</option>   -->
+						        <option value="../docs/minutes/2015/12_16_2015.pdf">December 16</option>  
 			      			</select>
-	      			</form>
-		      			</div>
-		      			<div class="col-sm-3 text-center">
-		      				<form id="minutesform" role="form">
-							<label for="minutes2"><h4 class="blue">2014</h4></label>
-			      			<select class="form-control" onchange="minutes2()" id="minutes2">
+		      		
+							<label for="2014minutes"><h4 class="blue">2014</h4></label>
+			      			<select class="form-control" onchange="minutes(this.id)" id="2014minutes">
 						        <option value="">Please Select</option>
 						        <option value="../docs/minutes/2014/01_02_2014.pdf">January 2</option>
 						        <option value="../docs/minutes/2014/01_15_2014.pdf">January 15</option>
@@ -292,12 +326,10 @@
 						        <option value="../docs/minutes/2014/12_03_2014.pdf">December 3</option>
 						        <option value="../docs/minutes/2014/12_17_2013.pdf">December 17</option>  
 			      			</select>
-			      			</form>
-		      			</div>
-		      			<div class="col-sm-3 text-center">
-		      				<form id="minutesform" role="form">
-							<label for="minutes3"><h4 class="blue">2013</h4></label>
-			      			<select class="form-control" onchange="minutes3()" id="minutes3">
+		 
+							<label for="2013minutes"><h4 class="blue">2013</h4></label>
+			      			<select class="form-control" onchange="minutes(this.id)" id="2013minutes">
+			      				
 			      				<option value="">Please Select</option>
 						        <option value="../docs/minutes/2013/01_02_2013.pdf">January 2</option>
 						        <option value="../docs/minutes/2013/PH_01_02_2013.pdf">January 2 Public Hearing</option>
@@ -327,28 +359,24 @@
 						        <option value="../docs/minutes/2013/12_04_2013.pdf">December 4</option>
 						        <option value="../docs/minutes/2013/12_20_2013.pdf">December 20</option>  
 			      			</select>
-			      			</form>
+			 			</div><!--formgroup-->
 	      			<!-- <div class="col-sm-3 text-center">
 						<a href="#" class="btn btn-success" role="button">Older</a>
 	      			</div> -->
-				</div>
-			</div>
-			<div>
-		</div><!--tab-pane-->
-	</div><!--tab-content-->
-    </div>
-    <div class="col-sm-2">
-								
-							</div>
-  	</div>
+				</div><!--container-->
+				<p>Are we missing minutes you're looking for? Please fill out our <a href="contactus.html">contact form.</a> with the dates you are requesting.</p>
+		
+			</div><!--row-->
+	</div><!--container-->
+  </div><!--bmtabpane-->
+  	</div><!--col-sm-10-->
   </div> <!--jumbotron-->
 
 </div> 
-						</div>
-					</div>  
-				</div>
-			</div><!--row-->
-		</div>		<!--container fluid  -->
+						</div><!--row-->
+					</div><!--container fluid  --> 
+				
+			
 		<footer class="footer">
 			<div class="container">
 				<div class="row">
@@ -369,9 +397,6 @@
 				</div>
 			</div><!--container-->
 		</footer> <!--footer-->
-			</div><!--container-fluid-->
-			</div>
-		</div><!--container-->
 		<!-- jQuery library -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
@@ -381,28 +406,14 @@
 		<!--link script for google analytics-->
 		<script src="../js/googleanalyticsscript.js"></script>
 		<!--link script for random background image-->	
-		<script src="../js/randombggenerator.js"></script>	
+		<script src="../js/randombggenerator.js"></script>
 		
-		<!--scripts for minutes select box-->
+		<!--script for minutes select boxes-->
 		<script> 
-			function minutes3() {
-				var c = document.getElementById("minutes3");
-				var value3 = c.options[c.selectedIndex].value3;
-    			window.open(value3);
-			}
-		</script>
-		<script> 
-			function minutes2() {
-				var b = document.getElementById("minutes2");
-				var value2 = b.options[b.selectedIndex].value2;
-    			window.open(value2);
-			}
-		</script>
-		<script> 
-			function minutes1() {
-				var a = document.getElementById("minutes1");
-				var value1 = a.options[a.selectedIndex].value1;
-    			window.open(value1);
+			function minutes(c) {
+				var c = document.getElementById(c);
+				var value = c.options[c.selectedIndex].value;
+    			window.open(value);
 			}
 		</script>
 	</body>

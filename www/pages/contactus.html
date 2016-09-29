@@ -46,6 +46,7 @@
 						<li class="dropdown">
 							<a class="dropdown-toggle"data-toggle="dropdown" href="#">Departments<span class="caret"> </span></a>
 							<ul class="dropdown-menu">
+								<li><a href="enterprisezoning.html">Fairmont City/ Caseyville/ Brooklyn Enterprise Zoning</a></li>
 								<li><a href="firedepartment.html">Fire Department</a></li>
 								<li><a href="policedepartment.html">Police Department</a></li>
 								<li><a href="publicworks.html">Public Works Department</a></li>
@@ -83,25 +84,36 @@
 						<!-- Tab panes -->
 						<div class="tab-content">
 							<div role="tabpanel" class="tab-pane" id="viacontactform"> 
-								<form id="contactusform1" role="form">
-								  <div class="form-group">
-								    <label for="email">Name</label>
-								    <input type="text" class="form-control" id="name">
-								  </div>
-								  <div class="form-group">
-								    <label for="email">Email</label>
-								    <input type="email" class="form-control" id="email">
-								  </div>
-								  <div class="form-group">
-								    <label for="phone">Phone Number</label>
-								    <input type="tel" class="form-control" id="phone">
-								  </div>
-								  <div class="form-group">
-								    <label for="message">Message</label>
-								    <input type="text" class="form-control" id="message">
-								  </div>
-								  <button type="submit" class="btn btn-default">Submit</button>
-							  	</form>
+								<form method="POST" id="contactusform1" name="contactform" action="contactus/contact-form-handler.php"> 
+									<div class="form-group">
+										<label for='name'>Your Name: </label> <br>
+										<input type="text" class="form-control" name="name" id="name1">
+									</div>
+									<div class="form-group">
+										<label for='email'>Email Address: </label> <br>
+										<input type="email" class="form-control" name="email" id="email1"> <br>
+									</div>
+									<div class="form-group">
+										<label for="phone">Phone Number</label>
+										<input type="tel" class="form-control" name="phone" id="phone1">
+									</div>
+									<div class="form-group">
+										<label for='message'>Message:</label> <br>
+										<textarea name="message"></textarea>
+									</div>
+									<input type="submit" class="btn btn-default" value="Submit"><br>
+								</form>
+
+<script language="JavaScript">
+// Code for validating the form
+// Visit http://www.javascript-coder.com/html-form/javascript-form-validation.phtml
+// for details
+var frmvalidator  = new Validator("contactform");
+frmvalidator.addValidation("name","req","Please provide your name"); 
+frmvalidator.addValidation("email","req","Please provide your email"); 
+frmvalidator.addValidation("email","email","Please enter a valid email address"); 
+</script>
+
 							</div>
 							<div role="tabpanel" class="tab-pane active" id="directory">
 								<h4>City Hall</h4>

@@ -1,5 +1,17 @@
-h4 {
-  font-family: "Halant", serif;
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Fjalla One", sans-serif;
+  color: white;
+}
+
+#enterprisezoning h4:hover, #enterprisezoning p:hover, #enterprisezoning nav:hover {
+  cursor: pointer;
+  color: #099bc6;
+}
+
+#enterprisezoning p, #enterprisezoning p > li {
+  display: none;
+  padding-left: 5px;
+  border: 1px solid #099bc6;
   color: white;
 }
 
@@ -217,6 +229,51 @@ a:active {
   background-color: #3385FF;
 }
 #contactussoclinks .social-buttons li a:visited {
+  color: white;
+}
+
+#enterprisezoning .pagetitle {
+  font-size: 40px;
+  font-family: "Fjalla One", sans-serif;
+  text-transform: uppercase;
+  color: #099bc6;
+  border: 3px solid #099bc6;
+  background-color: white;
+  text-align: center;
+}
+
+#enterprisezoning .nav-tabs {
+  font-family: "Halant", serif;
+  border-bottom: 2px solid #099bc6;
+  text-decoration: none;
+}
+#enterprisezoning .nav-tabs li.active > a, #enterprisezoning .nav-tabs > li.active > a:hover, #enterprisezoning .nav-tabs > li.active > a:focus {
+  border: 2px solid #099bc6;
+  color: white;
+  background-color: black;
+}
+#enterprisezoning .nav-tabs > li > a {
+  text-align: center;
+  color: black;
+  background-color: white;
+  text-decoration: none;
+}
+#enterprisezoning .nav-tabs > li > a:hover {
+  border: 2px solid #099bc6;
+  background-color: white;
+  color: #099bc6;
+  text-decoration: none;
+}
+
+#enterprisezoningsoclinks a:link {
+  color: white;
+}
+#enterprisezoningsoclinks li a:hover,
+#enterprisezoningsoclinks li a:focus,
+#enterprisezoningsoclinks li a:active {
+  background-color: #099bc6;
+}
+#enterprisezoningsoclinks li a:visited {
   color: white;
 }
 
