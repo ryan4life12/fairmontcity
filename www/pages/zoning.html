@@ -111,7 +111,7 @@
     <p>The Zoning Board will meet on the follwing dates:</p>
     <table width="400" border="0" align="center">
       <tr>
-        <td>1/23/2017</td>
+        <td>1/23/2017 - <a href="../docs/zoning_minutes/2017/1_23_17.pdf" target="_blank">View Minutes</a></td>
       </tr>
       <tr>
         <td>4/24/2017</td>
@@ -130,6 +130,7 @@
 									<li role="presentation" class="active"><a href="#forms" aria-controls="forms" role="tab" data-toggle="tab">Forms</a></li>
 									<li role="presentation"><a href="#codes" aria-controls="codes" role="tab" data-toggle="tab">Zoning Codes</a></li>
 									<li role="presentation"><a href="#maps" aria-controls="maps" role="tab" data-toggle="tab">Zoning Maps</a></li>
+									<li role="presentation"><a href="#minutes" aria-controls="maps" role="tab" data-toggle="tab">Zoning Minutes</a></li>
 								</ul>
 								
 								<!-- Tab panes -->
@@ -152,6 +153,18 @@
 								    <div role="tabpanel" class="tab-pane" id="maps">
 								    	<p><a href="../docs/maps/Zoning 7-23-2010.pdf">Fairmont City Zoning Map.</a></p>
 								    	<p><a href="../docs/maps/Fairmont Caseyville Brooklyn Enterprize Zone Map.pdf">Fairmont Caseyville Brooklyn Enterprize Zone Map</a></p>
+								    </div>
+								    <div role="tabpanel" class="tab-pane" id="minutes">
+								    	<label for="2016minutes"><h4 class="blue">2016</h4></label>
+			      			<select class="form-control" onchange="minutes(this.id)" id="2016minutes">
+						        <option value="">Please Select</option>
+						        <option value="../docs/zoning_minutes/2016/10_24_16.pdf">October 24</option>
+			      			</select>
+			      			<label for="2017minutes"><h4 class="blue">2017</h4></label>
+			      			<select class="form-control" onchange="minutes(this.id)" id="2017minutes">
+						        <option value="">Please Select</option>
+						        <option value="../docs/zoning_minutes/2017/01_23_17.pdf">January 23</option>
+			      			</select>
 								    </div>
 								</div>
 
@@ -192,6 +205,15 @@
 		<script src="../js/googleanalyticsscript.js"></script>
 		<!--link script for random background image-->	
 		<script src="../js/randombggenerator.js"></script>	
+		
+		<!--script for minutes select boxes-->
+		<script> 
+			function minutes(c) {
+				var c = document.getElementById(c);
+				var value = c.options[c.selectedIndex].value;
+    			window.open(value);
+			}
+		</script>
 		
 	</body>
 </html>
