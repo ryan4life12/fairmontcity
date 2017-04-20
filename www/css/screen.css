@@ -502,5 +502,11 @@ a:active {
 #zoningsoclinks li a:visited {
   color: white;
 }
+.black-text {
+	color: black;
+	background-color: white;
+	display: inline;
+	float: none;
+}
 
 /*# sourceMappingURL=screen.css.map */
