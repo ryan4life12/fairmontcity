@@ -10,7 +10,7 @@ var navbarString = '<nav class="navbar navbar-inverse" data-spy="affix" data-off
 				navbarString +=	'<div class="collapse navbar-collapse" id="myNavbar">';
 					navbarString +=	'<ul class="nav navbar-nav">';
 						navbarString +=	'<li class="active"><a href="../index.html"><i class="fa fa-home fa-1x"></i></a></li>';
-					    navbarString +=	'<li><a href="aboutus.html">About Us</a></li>';
+						navbarString +=	'<li><a href="aboutus.html">About Us</a></li>';
 						navbarString +=	'<li><a href="administration.html">Administration</a></li>';
 						navbarString +=	'<li><a href="businesses.html">Businesses</a></li>';
 						navbarString +=	'<li class="dropdown">';
@@ -30,4 +30,4 @@ var navbarString = '<nav class="navbar navbar-inverse" data-spy="affix" data-off
 					navbarString +=	'</ul>';
 				navbarString +=	'</div><!--collapse navbar-collapse-->';
 			navbarString +=	'</div><!--container-fluid-->';
-$('#myNavbar').append(navbarString);
+$('#myNavbar').append(navbarString); 
