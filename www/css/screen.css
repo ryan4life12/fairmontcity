@@ -508,5 +508,11 @@ a:active {
 	display: inline;
 	float: none;
 }
+.carousel-control {
+	    padding-top: 25%;
+}
+.newsalert {
+	color: red;
+}
 
 /*# sourceMappingURL=screen.css.map */
