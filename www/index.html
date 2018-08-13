@@ -1,7 +1,9 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-	<head>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+<!DOCTYPE html>
+<!-- define angular app -->
+<html ng-app="scotchApp">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="shortcut icon" href="img/favicon.png" type="image/png"/>
 		<title>Fairmont City, Illinois - Official Website</title>
 		<meta name="description=" content="This is the official website for the village of Fairmont City, Illinois.  Also known as the city of good neighbors, Fairmont City is 10 minutes East of St. Louis and 10 minutes West of Collinsville, Illinois.Located along historic Route 66, Fairmont is a great place to work, live, start a business, or just visit and enjoy a meal at one of the many excellent Hispanic restaurants.">
@@ -20,14 +22,16 @@
 		<!-- link to google fonts -->
 		<link href='https://fonts.googleapis.com/css?family=Coustard:900' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Fjalla+One|Halant:500,600' rel='stylesheet' type='text/css'>
-	</head>
-	
-	<body data-spy="scroll" data-target=".navbar" data-offset="45">
-		<div class="container-fluid header">
-		  <h1>Fairmont City Illinois <h1>
+</head>
+
+<!-- define angular controller -->
+<body  data-spy="scroll" data-target=".navbar" data-offset="45">
+	<div class="container-fluid header">
+		  <h1>Fairmont City Illinois </h1>
 		  <p>The City of Good Neighbors</p>
-		</div>
-		<nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="45">
+	</div>
+	
+  <nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="45">
 			<div class="container-fluid">
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -38,10 +42,11 @@
 				</div><!--navbar-header-->
 				<div class="collapse navbar-collapse" id="myNavbar">
 					<ul class="nav navbar-nav">
-						<li class="active"><a href="index.html"><i class="fa fa-home fa-1x"> </i></a></li>
+						<li class="active"><a href="#"><i class="fa fa-home fa-1x"> </i></a></li>
 					    <li><a href="pages/aboutus.html">About Us</a></li>
 						<li><a href="pages/administration.html">Administration</a></li>
 						<li><a href="pages/businesses.html">Businesses</a></li>
+						<li><a href="pages/community.html">Community</a></li>
 						<li class="dropdown">
 							<a class="dropdown-toggle"data-toggle="dropdown" href="#">Departments<span class="caret"> </span></a>
 							<ul class="dropdown-menu">
@@ -52,7 +57,6 @@
 								<li><a href="pages/zoning.html">Zoning Department</a></li> 	
 							</ul>
 						</li>
-						<li><a href="pages/community.html">Community</a></li>
 						<!-- <li><div id="google_translate_element"> </div></li><script type="text/javascript"> -->
 						<!-- function googleTranslateElementInit() { -->
 						<!-- new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'es', layout: google.translate.TranslateElement.FloatPosition.TOP_LEFT}, 'google_translate_element'); -->
@@ -65,83 +69,112 @@
 				</div><!--collapse navbar-collapse-->
 			</div><!--container-fluid-->
 		</nav><!--navbar navbar-inverse-->
- 
- 
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-sm-2">
 					<a href="../index.html"><img src="img/Logos_Backgrounds/fairmontcitylogo.png" class="img-responsive center-block"></a>
 				</div>
 				<div class="col-sm-10">
-					<div class="jumbotron">
-						<div class="row">
-							<div id="index" class="col-sm-9">
-								<div class="pagetitle ">WELCOME TO THE <i>"CITY OF GOOD NEIGHBORS"</i></div>
-								<blockquote>
-									<p>Welcome to the Village of Fairmont City. We are the city of good neighbors; we strive to create an outstanding way of life for our community. This is done by providing a well-protected community for our citizens to thrive in a place of history, culture and future expansion.</p>
-									<footer>The Village Administration</footer>
-								</blockquote>
-								<div class="row">
-									<div class="col-sm-12 pagetitle newsalert">
-										<h3>
-											 The Village of Fairmont City has three surplus vehicles for auction.
-											 <ul>
-											 	<li>2015 Chevrolet Silverado Crew Cab Pickup 4d</li>
-											 	<li>2010 Chrysler 300 Touring</li>
-											 	<li>2011 Dodge Caravan Gran Van</li>
-											 </ul>
-											 <a href="docs/vehicle bid notice 2017.doc"><h3>More Information</h3></a>
-											<!-- <a href="docs/Annexation Environmental Operations.pdf" target="_blank">More Info</a> -->
-										</h3>
-									</div>		
-								</div> 
-								<div class="row">
-									<div class="col-sm-12"><div class="pagetitle">Quick Links</div></div>
-								</div>
-								<div class="row">
-									<div class="col-sm-4">
-										<button type="button" class="btn-block btn-primary" onclick="location.href='docs/zoning_minutes/agenda 4 24 17.pdf'">Agenda For Upcoming Zoning Board Meeting</button>
-										<button type="button" class="btn-block btn-primary" onclick="location.href='docs/minutes/agenda aug 16.pdf'">Agenda For Upcoming Board Meeting</button>
-										<a href="pages/administration.html#bm"> <button id="bmlink" type="button" class="btn-block btn-primary">Board Meeting Minutes</button></a>
-										<script>
-											$('#bmlink').on('click', function() {
-												location.href='pages/administration';
-												$('#bm').prop('aria-expanded', true);
-												$('#eo').prop('aria-expanded', false);
-											});
-										</script>
-									</div>
-									<div class="col-sm-4">
-					      			<select class="form-control" onchange="formOpener(this.id)" id="forms">
-					      				<option value="">FORMS</option>
-								        <option value="docs/forms/agenda_Form_FCIL.pdf">Agenda Form</option>
-								        <option value="docs/forms/building_Permit_Application_FCIL.pdf">Building Permit Application</option>
-								        <option value="docs/forms/business_License_Application_FCIL.pdf">Business Licensce Application</option>
-								        <option value="docs/forms/building_Materials_Tax_Exemption_Application_FCIL2.doc">Enterprise Zone/Materials Tax Exemption Form</option>
-								        <option value="docs/forms/liquor_License_Application_FCIL.pdf">Liquor License Application</option>
-								        <option value="docs/forms/NOTICE OF NON-DISCRIMINATION.pdf">NOTICE OF NON-DISCRIMINATION</option>
-								        <option value="docs/forms/tif_Application_FCIL.pdf">TIF Application</option>
-								        <option value="pages/zoning.html">Zoning Forms</option>		         
-					      			</select>
-					 			</div><!--formgroup-->
-									</div>
-									<div class="col-sm-4">
-										
-									</div>
-								</div>
-							<div class="col-sm-3">
-								<h4>Live Facebook Feed</h4>
-								<div class="fb-page" data-href="https://www.facebook.com/Fairmont-City-Illinois-Police-Department-209697402416510/" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false" data-show-posts="true"> </div>
-							</div>
-					
+  <div id="main">
+  	
+<div class="jumbotron">
+	<div class="row">
+		<div id="index" class="col-sm-9">
+			<div class="pagetitle ">WELCOME TO THE <i>"CITY OF GOOD NEIGHBORS"</i></div>
+			<blockquote>
+				<p>Welcome to the Village of Fairmont City. We are the city of good neighbors; we strive to create an outstanding way of life for our community. This is done by providing a well-protected community for our citizens to thrive in a place of history, culture and future expansion.</p>
+				<footer>The Village Administration</footer>
+			</blockquote>
+			
+			<div class="row">
+				 
+						
+			</div> 
+			<div class="row">
+				<div class="col-sm-12"><div class="pagetitle">News and Events</div></div>
+			
+			<div class="row botborder">
+				<div class="col-sm-12">
+					<div class="row newsalert">
+						<div class="col-sm-12">
+							<h2>Program Year 2018 Moderate Housing Rehabilitation Program</h2>
+							<h3>PRE-APPLICATIONS BEING ACCEPTED</h3>
+							<p>The St. Clair County Intergovernmental Grants Department will be
+accepting pre-applications from resident homeowners to participate in
+the St. Clair County Community Development Block Grant Moderate
+Housing Rehabilitation Program.
+This program is designed to address housing code violations. Funds will
+be used to repair interior and exterior systems that threaten the health
+or safety of occupants. This includes areas such as electrical, plumbing,
+heating systems, roofing, panting, windows and doors.</p>
+<button type="button" class="btn-block btn-success" onclick="location.href='docs/Housing Rehabilitation Pre-Application.pdf'"><h3>Learn More</h3></button>
 							
 						</div>
-					</div><!--jumbotron-->
+						</div>
+					</div>
 				</div>
 			</div>
+			<div class="row">
+				<div style="text-align: center" class="col-sm-12">
+					<h3></h3>
+					<h4></h4>
+					<!-- <button type="button" class="btn-block btn-success" onclick="location.href='docs/ord 734 appropriation 2018.pdf'"></button> -->
+				</div>
+			</div>
+				
+			
+			
+			<div class="row">
+				<div class="col-sm-12"><div class="pagetitle">Quick Links</div></div>
+			</div>
+			<div class="row">
+				<div class="col-sm-4">
+					<button type="button" class="btn-block btn-primary" onclick="location.href='docs/zoning_minutes/agenda 7 23 18.pdf'">Agenda For Upcoming Zoning Board Meeting</button>
+					<button type="button" class="btn-block btn-primary" onclick="location.href='docs/minutes/agendaaugust15.pdf'">Agenda For Upcoming Board Meeting</button>
+					<a href="pages/administration.html#bm"> <button id="bmlink" type="button" class="btn-block btn-primary">Board Meeting Minutes</button></a>
+					<script>
+						$('#bmlink').on('click', function() {
+							location.href='pages/administration';
+							$('#bm').prop('aria-expanded', true);
+							$('#eo').prop('aria-expanded', false);
+						});
+					</script>
+				</div>
+				<div class="col-sm-4">
+      			<select class="form-control" onchange="formOpener(this.id)" id="forms">
+      				<option value="">FORMS</option>
+			        <option value="docs/forms/agenda_Form_FCIL.pdf">Agenda Form</option>
+			        <option value="docs/forms/building_Permit_Application_FCIL.pdf">Building Permit Application</option>
+			        <option value="docs/forms/business_License_Application_FCIL.pdf">Business Licensce Application</option>
+			        <option value="docs/forms/enterprise_Zone_Application_FCIL.pdf">Enterprise Zone/Materials Tax Exemption Form</option>
+			        <option value="docs/forms/liquor_License_Application_FCIL.pdf">Liquor License Application</option>
+			        <option value="docs/forms/NOTICE OF NON-DISCRIMINATION.pdf">NOTICE OF NON-DISCRIMINATION</option>
+			        <option value="docs/forms/tif_Application_FCIL.pdf">TIF Application</option>
+			        <option value="pages/zoning.html">Zoning Forms</option>		         
+      			</select>
+ 			</div><!--formgroup-->
+				<div class="col-sm-4">
+					
+				</div>
+			</div>
+			</div>
+		<div class="col-sm-3">
+			<h4>Live Facebook Feed</h4>
+			<div class="fb-page" data-href="https://www.facebook.com/Fairmont-City-Illinois-Police-Department-209697402416510/" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false" data-show-posts="true"> </div>
 		</div>
-		
-		<footer class="footer">
+	</div>
+</div><!--jumbotron-->
+    <!-- angular templating -->
+		<!-- this is where content will be injected -->
+   
+    
+  </div>
+  </div>
+			</div>
+		</div>
+  </div>
+  
+  <footer class="footer">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-4">
@@ -162,6 +195,7 @@
 			</div><!--container-->
 		</footer> <!--footer-->
 		
+    	
     	<!-- jQuery library -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
@@ -201,6 +235,7 @@
 			}
 		</script>
 
-	</body>
+</body>
+
 </html>
 

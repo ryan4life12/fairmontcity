@@ -173,6 +173,10 @@ nav {
 	position: absolute;
 
 }
+.botborder {
+	border-bottom: 5px solid white;
+	margin-bottom: 10px;
+}
 /* tab color */
 /*.nav-tabs>li>a {
   background-color: #333333; 
